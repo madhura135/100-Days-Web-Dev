@@ -1,0 +1,10 @@
+japan-flag
+france-flag
+germany-flag
+italy-flag
+belgium-flag
+netherlands-flag
+switzerland-flag
+denmark-flag
+uk-flag
+india-flag
