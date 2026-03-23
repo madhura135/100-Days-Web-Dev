@@ -20,7 +20,7 @@
       min-height: 100vh;
     }
     .pricing-plan{
-      background-color: aquamarine;
+      background-color:whitesmoke;
       margin:15px;
       padding: 5px;
       width:23rem;
@@ -30,26 +30,43 @@
     li{
       list-style: none;
     }
+    .plan-title{
+      font-size: large;
+      font-weight: 600;
+    }
+    .plan-price{
+      font-size: xx-large;
+      font-weight: 600;
+    }
+    button{
+      background-color: rgb(237, 148, 15);
+      color: white;
+      border-radius:2px;
+      border-style: none;
+      padding:6px;
+      margin:4px;
+      font-size: smaller;
+    }
 
 
 
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
       .pricing-container {
-        display: flex;
-        background-color: blue;
-        /* align-items: center;
-          justify-content: center; */
-        align-content: space-around;
-        flex-direction: row;
-
-      }
-
-      .pricing-plan {
-        border: 1px solid black;
-        gap: 20px;
-      }
-
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .pricing-plan{
+      background-color:whitesmoke;
+      margin:15px;
+      padding: 5px;
+      width:23rem;
+      text-align: center;
+      text-decoration: none;
+    }
     }
   </style>
 </head>
