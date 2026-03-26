@@ -1,0 +1,36 @@
+!--Requirements (important)
+🔹 Main Container
+Use display: grid
+Create 2 columns
+Sidebar → fixed width (e.g. 200px)
+Content → remaining space (1fr)
+Create rows
+Header → 80px
+Main content → remaining (1fr)
+'-------------------------------------'
+🔹 Layout Structure
+
+You should have 4 main parts:
+
+Sidebar
+Full height (left side)
+Should span 2 rows
+Header
+Top right
+Only spans content area (not sidebar)
+Main Content
+Below header
+Cards inside Main Content
+Use grid again inside this
+Create 3 columns (repeat(3, 1fr))
+'--------------------------------------'
+🔹 Grid concepts you MUST use
+
+👉 grid-template-columns
+👉 grid-template-rows
+👉 grid-column / grid-row
+👉 gap
+👉 nested grid (grid inside grid)
+
+
+-->

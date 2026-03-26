@@ -1,0 +1,56 @@
+/* Main container */
+.grid-container {
+  height: 100vh; /* Full screen height so 1fr can work */
+  display: grid;
+
+  /* 2 columns → sidebar fixed (200px), rest flexible */
+  grid-template-columns: 200px 1fr;
+
+  /* 2 rows → header fixed (80px), rest flexible */
+  grid-template-rows: 80px 1fr;
+
+  gap: 10px; /* space between all grid items */
+}
+
+
+/* Sidebar */
+.sidebar {
+  background-color: lightgray;
+
+  /* Make sidebar span BOTH rows (full height) */
+  grid-row: 1 / 3;
+}
+
+
+/* Header */
+.header {
+  background-color: lightgray;
+
+  /* Place header in second column (right side) */
+  grid-column: 2 / 3;
+}
+
+
+/* Main content area */
+.content {
+  background-color: pink;
+
+  /* Place content below header (right side) */
+  grid-column: 2 / 3;
+
+  /* Nested grid starts here */
+  display: grid;
+
+  /* Create 3 equal columns for cards */
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px; /* space between cards */
+}
+
+
+/* Individual cards */
+.card {
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+}
