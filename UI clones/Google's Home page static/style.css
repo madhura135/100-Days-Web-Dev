@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px;
+    margin: 17px 7px 0px 25px;
+    /*top right bottom left*/
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navright {
+
+    float: right;
+
+}
+
+#navright img {
+    display: block;
+    height: 28px;
+    width: 28px;
+}
+
+.navbar li:hover {
+    text-decoration: underline;
+}
+
+.navbar button {
+    background-color: blue;
+    border-radius: 25px;
+    padding: 12px 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+main img {
+    display: block;
+    margin: 50px auto;
+    height: 180px;
+    width: 430px;
+}
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 24px;
+    /* 👈 clean and balanced */
+}
+
+main button {
+    background-color: #F8F9FA;
+    color: rgb(72, 71, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border-style: none;
+    padding: 12px 30px;
+    font-size: 17px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    /* 👈 This makes hover border color work */
+    transition: border-color 0.3s ease;
+}
+
+.center-wrapper button:hover {
+    border: 1px solid rgb(185, 181, 181);
+    /* fully declared */
+    border-radius: 7px;
+    box-shadow: 0px 0px 2px rgb(197, 193, 193);
+}
+
+pre .lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+pre span {
+    color: blue;
+
+}
+
+pre span:hover {
+    text-decoration: underline;
+}
+
+.sbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+
+input[type="text"] {
+  height: 5vh;
+  width: 35vw;
+  border: 1px solid rgb(187, 184, 184);
+  border-radius: 25px;
+  font-size: 20px;             /* Large text */
+  line-height: 1;            /* Makes sure caret is aligned with text */
+  caret-color: black;          /* Optional: sets blinking cursor color */
+  padding: 5px 15px;           /* Enough room for big font */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;    }  /* Keeps layout tidy */
+
+
+input[type="text"]:focus {
+    border-color: rgb(186, 181, 181);
+    /* slightly darker grey */
+    box-shadow: 8px 4px 4px rgba(198, 196, 196, 0.4);
+    /* optional glow */
+    outline: none;
+    /* to remove default blue outline */
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 16px;
+  background-color: #F8F9FA;
+  margin:168px 2px 0px 2px;/*top right bottom left*/
+}
+.footer1 {
+  background-color: #F8F9FA;
+  padding: 15px 30px;
+  height:3vh;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: space-between; /* 👈 puts left & right at opposite ends */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #F8F9FA;
+}
+.footer2 li{
+     background-color: #F8F9FA;
+    list-style: none;
+    display: inline;
+    padding:5px 15px;
+    
+}
+.footer2 li:hover{
+    text-decoration: underline;
+}

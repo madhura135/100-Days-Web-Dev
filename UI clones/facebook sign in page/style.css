@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Format	Code
+HEX	#1877F2
+RGB	rgb(24, 119, 242)
+HSL	hsl(221, 88%, 52%)*/
+
+main {
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: grid;
+    grid-template-areas: "logo form";
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+
+.form {
+    padding-bottom: 7px;
+}
+
+/* .line1 {
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+} */
+.line1 {
+
+    text-align: left;
+    font-size: xx-large;
+    color: black;
+    margin: 0;
+    /* no extra vertical margin */
+    line-height: 1.2;
+    /* tighter line spacing */
+}
+
+.line2 {
+    font-size: large;
+    display: inline-block;
+    padding-left: 90px;
+    padding-top: 0;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+.line2 b:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    /* reduced gap between logo/line1 and white box */
+    transform: translateY(-50px);
+    /* move logo section upward */
+}
+
+.logo img {
+    height: 170px;
+    width: 290px;
+    margin-bottom: 5px;
+    /* reduce space between image and line1 */
+}
+
+.white {
+    height: 460px;
+    width: 530px;
+    background-color: white;
+    border-style: none;
+    border-radius: 15px;
+    margin: 50px;
+    padding: 27px;
+    box-sizing: border-box;
+    box-shadow: 2px 1px 10px 5px rgb(225, 224, 224);
+    /*box-shadow: offset-x offset-y blur-radius spread-radius color;*/
+}
+
+input {
+    height: 66px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: larger;
+    border: 1px solid rgb(134, 133, 133);
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+input:focus{
+    caret-color:#1877F2;
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 2px 1.5px  #3d8af0; /*box-shadow: offset-x offset-y blur-radius spread-radius color;*/
+}
+
+#login button {
+    height: 60px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 0px 10px 10px;
+    /*top right bottom left*/
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 7px;
+    color: white;
+    background-color: #1877F2;
+    border-style: none;
+}
+
+#forgot {
+    font-size: large;
+    margin: 10px;
+    padding: 7px;
+    text-align: center;
+    color: rgb(24, 119, 242);
+
+}
+#forgot:hover{
+    text-decoration: underline;
+    text-decoration-color:rgb(24, 119, 242) ;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    width: 100%;
+    margin: 20px auto;
+}
+
+#create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 5px auto;
+    /*top right bottom left*/
+    padding: 15px;
+    color: white;
+    background-color: #44b700;
+    border-radius: 7px;
+    height: 36px;
+    width: 45%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+}
+#create:hover{
+     background-color: #3a9a02;
+}
+
+footer {
+    height: 200px;
+    background-color: white;
+    color: rgb(141, 139, 139);
+    margin-top: 30px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.footer1 {
+    font-size: medium;
+    padding-bottom: 5px;
+}
+
+.footer2 {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.footer1 span,
+.footer2 span {
+    margin-right: 12px;
+    /* Adds horizontal spacing between footer items */
+    display: inline-block;
+    line-height: 1.8;
+    /* vertical spacing */
+}
+
+.footer1,
+.footer2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer1 span:hover{
+    text-decoration: underline;
+    text-decoration-color:  rgb(141, 139, 139);
+
+}
+.footer2 span:hover {
+    text-decoration: underline;
+    text-decoration-color:  rgb(141, 139, 139);
+}
+
+.footer3 {
+    padding: 7px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: small;
+}
+
+@media only screen and (max-width: 853px) {
+  /* CSS rules for screens 853px or smaller */
+  main {
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: grid;
+    grid-template-areas: "logo"
+                            "form";
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    /* reduced gap between logo/line1 and white box */
+    transform: translateY(-50px);
+    /* move logo section upward */
+}
+}
