@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-2</title>
+</head>
+<body>
+    <script>
+        //to take name from the user 
+        let name=prompt("Please enter your name:");
+        //to separate the first character from name
+        let firstCharName=name.slice(0,1);
+        let capfirstCharName = firstCharName.toUpperCase();//keep this parenthesis empty
+        //to separate other characters from name
+        let otherCharName=name.slice(1,name.length);
+
+        //to add capitalized firstchar + otherchar to greet
+        let finalName=capfirstCharName+otherCharName;
+        alert("Helloww!! "+finalName);
+    </script>
+    
+</body>
+</html>
