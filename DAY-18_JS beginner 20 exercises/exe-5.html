@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe-5</title>
+
+    <style>
+        .box {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 8px;
+            height: 300px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+
+        h3 {
+            font-style: italic;
+        }
+
+        h3 strong {
+            font-style: normal;
+        }
+        input{
+            width:220px;
+        }
+
+        .multiply,
+        .division {
+            width: 200px;
+        }
+
+        .first,
+        .second,
+        .multiply,
+        .division,
+        .convert-button,
+        .result-box {
+            padding: 6px;
+            margin: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.  
+[ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+Expected Output :
+60°C is 140 °F
+45°F is 7.222222222222222°C -->
+    <div class="box">
+        <h3>Convert Celsius to Fahrenheit <strong>OR</strong> Fahrenheit to Celsius </h3>
+        <!-- Input fields -->
+        <div class="Celsius">
+            <label>Celsius: </label>
+            <input id="c" type="number" placeholder="Enter temperature in Celsius">
+        </div>
+        <div class="convert-button">
+            <!-- Buttons (type="button" prevents page reload) -->
+            <button type="button" class="covert-c-to-f" onclick="convertCeltoF()">Convert Celsius to Fahrenheit</button>
+        </div>
+
+
+        <!-- Result display -->
+        <div class="result">
+            <h4 id="output">The result is:</h4>
+        </div>
+
+        <!-- Covert f to c -->
+        <div class="Fahrenheit">
+            <label>Fahrenheit: </label>
+            <input id="f" type="number" placeholder="Enter temperature in Fahrenheit">
+        </div>
+        <!-- Buttons (type="button" prevents page reload) -->
+        <div class="convert-button"> <button type="button" class="covert-c-to-f" onclick="convertFtocel()">Convert
+                Fahrenheit to Celsius</button>
+        </div>
+
+        <!-- Result display -->
+        <div class="result2">
+            <h4 id="output2">The result is:</h4>
+            
+
+        </div>
+
+    </div>
+
+    <script>
+        // Function for Convert Celsius to faren
+        function convertCeltoF() {
+
+            //formula F = (C * (9/5)) + 32  
+            let c = Number(document.getElementById("c").value);
+
+            // Perform multiplication
+            let result = (c * (9/5)) + 32;
+
+            document.getElementById("output").innerText = "Celsius "+c+" = "+ result+" Fahrenheit";
+        }
+
+
+        //Finction for convert farenehit to Celsius
+          function convertFtocel() 
+        {
+            {
+  
+            //formula C = (F - 32)* (5/9)    
+            let f = Number(document.getElementById("f").value);
+
+            // Perform multiplication
+            let result2 = (f - 32)*(5/9);
+
+            document.getElementById("output2").innerText = "Fahrenheit "+f+" = "+ result2+" Celsius";
+            }
+
+        }
+
+
+    </script>
+    
+
+</body>
+
+</html>

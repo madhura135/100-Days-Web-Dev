@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe-3 Check Leap Year (Gregorian Calendar)</title>
+</head>
+<body>
+    
+<!-- Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar. 
+ //take the year from the user
+
+ //check if the value is completely divisible by 4 using % operator 
+
+ //if the ans ==0 then leap year otherwise normal year -->
+    
+    <script>
+         let year=prompt("enter year value");
+         function checkLeap(year){
+            if(year%4==0){
+                alert("This is the leap year");
+            }
+            else{
+                alert("This is the normal year");
+            }
+         }
+         checkLeap(year);
+    </script> 
+</body>
+</html>

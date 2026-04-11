@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Calculate Area of Triangle</title>
+</head>
+<body>
+    
+<!-- Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7.  
+     (Sides: 5, 6, 7) -->
+<script>
+//Area of triangle = 1. find semiperimeter 2. aply formula for area
+// 1. semi perimeter= s=(a+b+c)/2  2.s= squrt of s*(s-a)(s-b)(s-c)
+
+let a=5;
+let b=6;
+let c=7;
+//calc semi perimeter
+let s=(a+b+c)/2;
+let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+console.log("area of the given triangle is: "+area);
+
+</script>
+
+</body>
+</html>

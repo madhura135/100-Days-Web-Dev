@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe-4</title>
+
+    <style>
+        .box {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 8px;
+            height: 300px;
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .multiply,
+        .division {
+            width: 200px;
+
+
+        }
+
+        .first,
+        .second,
+        .multiply,
+        .division,
+        .result {
+            padding: 6px;
+            margin: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <!-- Input fields -->
+        <div class="first">
+            <label>Input-1: </label>
+            <input id="a" type="number" placeholder="Enter 1st number">
+        </div>
+
+        <div class="second">
+            <label>Input-2: </label>
+            <input id="b" type="number" placeholder="Enter 2nd number">
+        </div>
+
+        <!-- Buttons (type="button" prevents page reload) -->
+        <button type="button" class="multiply" onclick="calMulti()">Multiply</button>
+        <button type="button" class="division" onclick="calDivide()">Division</button>
+
+        <!-- Result display -->
+        <div class="result">
+            <h3 id="output">The result is:</h3>
+        </div>
+
+    </div>
+
+    <script>
+        // Function for multiplication
+        function calMulti() {
+
+            // ❌ Earlier mistake:
+            // You were passing (a, b) as parameters AND declaring them again → not allowed
+
+            // ✅ Correct: get values directly inside function when button is clicked
+            let a = Number(document.getElementById("a").value);
+            let b = Number(document.getElementById("b").value);
+
+            // Perform multiplication
+            let result = a * b;
+
+            // ❌ Earlier mistake:
+            // You were returning result but not showing it on UI
+
+            // ✅ Correct: update result in HTML
+            //             Think of HTML like a room with labeled boxes.
+
+            // getElementById("output") → go to box named "output"
+            // .innerText = ... → change what’s written inside that box
+            document.getElementById("output").innerText = "The result is: " + result;
+        }
+
+        // Function for division
+        function calDivide() {
+
+            // Get values again (each click should fetch fresh input)
+            let a = Number(document.getElementById("a").value);
+            let b = Number(document.getElementById("b").value);
+
+            // ❗ Important check (good practice)
+            if (b === 0) {
+                document.getElementById("output").innerText = "Cannot divide by zero!";
+                return; //this return tells to stop this function immediately, if we will use break here it will stop the loop, which we have not used here
+            }
+
+            // Perform division
+            let result = a / b;
+
+            // Show result
+            document.getElementById("output").innerText = "The result is: " + result;
+        }
+
+    </script>
+    <!-- 🧩 Final clarity (MOST IMPORTANT)
+
+👉 getElementById = “access element”
+👉 .value = “read input”
+👉 .innerText = “write output” -->
+</body>
+
+</html>
