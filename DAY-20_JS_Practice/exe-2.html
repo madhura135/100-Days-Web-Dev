@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22.Remove Character at Specified Position in String</title>
+</head>
+
+<body>
+    <!-- 22. Remove Character at Specified Position in String
+    Write a JavaScript program to remove a character at the specified position in a given string and return the modified
+    string. -->
+    <!-- 👉 slice = safe (no change)
+            👉 splice = destructive (changes array) -->
+  
+    <script>
+          let arrString=["E","A","R","T","MT","MQ"];
+          let n=arrString.length;
+          let y=Math.floor(Math.random()*n);
+          let i=arrString.splice(0,y)
+            arrString.pop(i);
+          console.log(arrString);
+
+
+    </script>
+
+
+</body>
+
+</html>

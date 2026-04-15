@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 20. Check if One Integer is Positive and One is Negative</title>
 </head>
+
 <body>
     <!-- 20. Check if One Integer is Positive and One is Negative
 
 Write a JavaScript program to check two given integers whether one is positive and another one is negative.   -->
     <script>
-         let num1 = Number(prompt("enter the random integer1"));
-          let num2 = Number(prompt("enter the random integer2"));
+        //  let num1 = Number(prompt("enter the random integer1"));
+        //   let num2 = Number(prompt("enter the random integer2"));
 
-        if (Math.abs(num - 100) <= 20 || Math.abs(num - 400) <= 20) {
-            alert("true!!");
-        } else {
-            alert("invalid");
+        // if (num1<=0 && num2<=0) {
+        //     alert("both are negative");
+        // } else if(num1<=0 && num2>=1) {
+        //     alert("Num1 is -ve and Num2 is +ve");
+        // }
+        // else if(num1>=0 && num2<=0){
+        //     alert("Num1 is +ve and Num2 is -ve");
+        // }
+        // else if(num1>=0 && num2>=0){
+        //     alert("Both are +ve");
+        // }
+        // else{
+        //     alert("Something is wrong !!")
+        // }
+        if (num1 === 0 || num2 === 0) {
+            alert("Zero is neither positive nor negative");
+        }
+        else if ((num1 > 0 && num2 < 0) || (num1 < 0 && num2 > 0)) {
+            alert("One is positive and one is negative");
+        }
+        else {
+            alert("Both are same sign");
         }
     </script>
 </body>
+
 </html>

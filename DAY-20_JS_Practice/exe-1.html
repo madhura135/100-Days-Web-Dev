@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21.Add 'Py' to Start of String if Not Present</title>
+</head>
+
+<body>
+    <!-- 21. Add 'Py' to Start of String if Not Present
+    Write a JavaScript program to create another string by adding "Py" in front of a given string. If the given string
+    begins with "Py" return the original string. -->
+
+    <script>
+        let inputString=prompt("Enter your string");
+        
+        if(inputString.slice(0,2)==="Py"){
+            alert("No chnage: "+inputString);
+        }
+        else{
+            alert("Py"+inputString);
+        }
+
+    </script>
+</body>
+
+</html>
