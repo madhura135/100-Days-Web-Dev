@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXE-8_Random Integer Guess Game</title>
+</head>
+
+<body>
+    <!-- Write a JavaScript program where the program takes a random integer between 1 and 10, and the user is then prompted
+    to input a guess number. The program displays a message "Good Work" if the input matches the guess number otherwise
+    "Not matched". -->
+    <script>
+        let guessNum=Math.random()*10;
+        guessNum=Math.floor(guessNum)+1; //this will remove 0 from the range
+        let num = Number(prompt("Enter the number from 1-10"));
+        if(guessNum==num){
+            alert("Good Work!");
+        }
+        else{
+            alert("Not matched.");
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

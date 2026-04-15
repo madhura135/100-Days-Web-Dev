@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe-15_ Difference Between Number and 13</title>
+</head>
+
+<body>
+    <!-- 15. Difference Between Number and 13
+    Write a JavaScript program to get the difference between a given number and 13, if the number is broader than 13
+    return double the absolute difference. 
+    “absolute difference”
+Difference between two numbers = subtraction
+But absolute means → always positive
+    -->
+<script>
+    let num=Number(prompt("Enter the number:"));
+    function checkDiff(num){
+        let diff=num-13;
+        if(num>13){
+            console.log(diff*2);
+        }
+        else{
+             console.log(diff);
+        }
+       
+    }
+    checkDiff(num);
+
+</script>
+    
+
+
+</body>
+
+</html>
