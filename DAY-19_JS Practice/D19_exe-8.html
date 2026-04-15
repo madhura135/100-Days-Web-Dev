@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99 bottles song</title>
+</head>
+
+<body>
+    <!-- Write a program that prints the lyrics of the classic song:
+👉 "99 Bottles of Beer on the Wall"
+🔢 Rules
+Your program should:
+Start from 99 bottles
+Count down to 0
+For each number, print two lines of the song
+📤 Expected Pattern
+For each number n, print:
+99 bottles of beer on the wall, 99 bottles of beer.
+Take one down and pass it around, 98 bottles of beer on the wall.
+Then continue:
+98 bottles of beer on the wall, 98 bottles of beer.
+Take one down and pass it around, 97 bottles of beer on the wall. -->
+
+    <script>
+        let count = 99;
+
+        while (count >= 0) {
+            if (count === 1) {
+                console.log(count + " bottle of beer on the wall, " + count + " bottle of beer.");
+                count--; // ✅ must be inside loop
+                console.log("Take one down and pass it around, NOMORE bottle of beer on the wall.");
+            }
+            else if (count === 0) {
+                console.log("No more bottle of beer on the wall, no more bottle of beer.Go to the store and buy some more, 99 bottles of beer on the wall.");
+                count--;
+            }
+            else {
+
+                console.log(count + " bottles of beer on the wall, " + count + " bottles of beer.");
+
+                count--; // ✅ must be inside loop
+
+                console.log("Take one down and pass it around, " + count + " bottles of beer on the wall.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

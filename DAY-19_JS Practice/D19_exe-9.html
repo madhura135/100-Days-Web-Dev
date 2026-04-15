@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if Integer is Within 20 of 100 or 400</title>
+</head>
+
+<body>
+    <!-- Check if Integer is Within 20 of 100 or 400
+Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.   -->
+
+    <script>
+        let num = Number(prompt("enter the random integer"));
+
+        if (Math.abs(num - 100) <= 20 || Math.abs(num - 400) <= 20) {
+            alert("true!!");
+        } else {
+            alert("invalid");
+        }//🧠 What is Math.abs()?
+
+        // 👉 Math.abs() means absolute value
+
+        // 👉 It converts any number to its positive version
+    </script>
+
+
+</body>
+
+</html>

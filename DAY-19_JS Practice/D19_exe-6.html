@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>19_Check if Integer is Within 20 of 100 or 400</title>
+    <title>Check if the guest is resent in invitation list</title>
 </head>
 <body>
 
-<!-- Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.  -->
 
     <script>
-
+        let guestList=['Tally','Jolly','Molly','rolly','Bully'];
+        let yourName=prompt("Tell us your name");
+        function checkGuest(yourName){
+              if(guestList.includes(yourName)){
+                    alert("Yes your are invited !!");
+                }
+                else{
+                    alert("Sorry you are not invited");
+                }
+                
+            }
+        
+        checkGuest(yourName);
     </script>
     
 </body>
