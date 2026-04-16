@@ -8,7 +8,10 @@
 <body>
 <!-- Write a JavaScript program to create a string from a given string. This is done by taking the last 3 characters and adding them at both the front and back. The string length must be 3 or more.  -->
     <script>
-        
+        let string=prompt("Enter the string");
+        let last3Char=string.slice(string.length-3,string.length);
+        let finalString= last3Char+string+last3Char;
+        console.log(finalString);
     </script>
 </body>
 </html>

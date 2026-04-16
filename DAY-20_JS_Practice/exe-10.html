@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>29.Check if Three Integers are in Range 50?99</title>
 </head>
-<body>
-    
-Write a JavaScript program to check whether three given integer values are in the range 50..99 (inclusive). Return true if one or more of them are in the specified range.  
+<body> 
+<!-- Write a JavaScript program to check whether three given integer values are in the range 50..99 (inclusive). Return true if one or more of them are in the specified range.   -->
+<script>
+// Input: 10, 55, 200
+// → 55 is in range → ✅ true
+// Input: 30, 40, 49
+// → none are in range → ❌ false
+// Input: 50, 10, 20
+// → 50 is allowed (inclusive) → ✅ true
+// Input: 99, 120, 130
+// → 99 is allowed → ✅ true
+
+// Define a function named check_three_nums that takes three parameters x, y, and z
+function check_three_nums(x, y, z) {
+  // Check if at least one of the numbers is in the range between 50 and 99 (inclusive)
+  return (x >= 50 && x <= 99) || (y >= 50 && y <= 99) || (z >= 50 && z <= 99);
+}
+
+// Log the result of calling the check_three_nums function with the arguments 50, 90, and 99 to the console
+console.log(check_three_nums(50, 90, 99));
+
+</script>
 </body>
 </html>
