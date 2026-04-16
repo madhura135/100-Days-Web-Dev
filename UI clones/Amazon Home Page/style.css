@@ -29,6 +29,12 @@ body {
     gap: 30px;
     color: white;
 }
+#items option{
+    width:20px;
+    height: 10px;
+    overflow:hidden ;
+
+}
 
 .logo img {
     height: 35px;
@@ -84,7 +90,7 @@ span {
 
 .nav2 {
     grid-area: nav2;
-    background-color: rgb(198, 245, 205);
+   background-color: #232F3E;
     height: 50px;
 }
 
