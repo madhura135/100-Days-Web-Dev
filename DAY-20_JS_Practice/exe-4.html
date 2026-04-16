@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23.Swap First and Last Characters in String</title>
+</head>
+
+<body>
+    <!-- Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. 
+ The string length must be broader than or equal to 1.   
+ 
+🧠 What is substring()?
+
+👉 It means:
+“Give me part of a string from START to END (but don’t include END)”
+
+Syntax:
+string.substring(startIndex, endIndex)
+startIndex → included ✅
+endIndex → NOT included ❌
+
+ -->
+
+    <script>
+        let string=prompt("Enter the string");
+        function swap1sttolast(string)
+        {
+            
+            if(string.length<=1){
+                return string;
+            }
+            else{
+                let stringMid =string.substring(1,string.length-1);//abc 1=b and length=3-1 =2 and 2 is c (whic is not considered)so mid = b
+                return (string[(string.length-1)]+stringMid+string[0]);//c+b+a=cba
+            }
+        }
+        console.log(swap1sttolast(string));
+       
+
+
+    </script>
+
+</body>
+
+</html>

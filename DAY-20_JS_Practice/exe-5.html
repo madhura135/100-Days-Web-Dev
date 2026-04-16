@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 24.Add First Character to Front and Back of String</title>
+</head>
+<body>  
+<!-- Write a JavaScript program to create another string from a given string with the first character of the given string added to the front and back. -->
+ <script>
+    let string=prompt("Enter the string");
+        function add1stToFrontAndBack(string)
+        {
+            
+            if(string.length<=1){
+                return string;
+            }
+            else{
+                let stringMid =string.substring(1,string.length);//abc 1=b and length=3 =2 and 2 is c (whic is not considered)so mid = b
+                return (string[0]+stringMid+string[0]);//c+b+a=cba
+            }
+        }
+        console.log(add1stToFrontAndBack(string));
+
+ </script>   
+
+       
+
+
+</body>
+</html>

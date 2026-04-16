@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>23.Swap First and Last elements in array</title>
 </head>
+
 <body>
-    
+    <!-- Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. 
+ The string length must be broader than or equal to 1.   -->
+
+    <script>
+        //1.create a array with letter, should be string array ,
+        //2.swap position of first and last element of the array
+        //3.create temp arr, where we will push last element,
+        //4. we will pop first element from the array
+        //5. we will push popped first element to last position of the array 
+        //6. and we will pop element from temp and push it to first position
+
+        //✅ Correct way to remove elements
+        // Remove last → pop()
+        // Remove first → shift()
+
+        // let arrStrings=['M','A','D','H','U','R','A']; //create a array with letters, should be string array 
+        // let tempArr1=[];//empty arr
+        // let tempArr2=[];//second empty arr
+        // tempArr1.push(arrStrings[0]);
+        // tempArr2.push(arrStrings[arrStrings.length-1]);
+        // console.log(tempArr1);
+        //  console.log(tempArr2);
+        // arrStrings.pop(arrStrings[arrStrings.length]);
+        //  arrStrings.pop(arrStrings[0]);
+        // arrStrings[0]=tempArr2[0];
+        // arrStrings[arrStrings.length]=tempArr1[0];
+        //  console.log(arrStrings);
+        let arrStrings = ['M', 'A', 'D', 'H', 'U', 'R', 'A'];
+
+        let first = arrStrings[0];
+        let last = arrStrings[arrStrings.length - 1];
+
+        // swap
+        arrStrings[0] = last;
+        arrStrings[arrStrings.length - 1] = first;
+
+        console.log(arrStrings);
+
+
+    </script>
+
 </body>
+
 </html>
