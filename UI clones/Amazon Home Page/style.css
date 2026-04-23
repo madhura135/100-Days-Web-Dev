@@ -14,10 +14,11 @@ body {
     grid-template-areas: "navbar navbar navbar navbar"
         "nav2  nav2  nav2  nav2"
         "banner banner banner banner"
+        "bar     bar     bar     bar"
         "cards cards cards cards"
         "bottomRow1 bottomRow1 bottomRow1 bottomRow1"
         "bottomRow2 bottomRow2 bottomRow2 bottomRow2";
-    grid-template-rows: 60px 50px 250px 400px 250px 250px;
+    grid-template-rows: 60px 50px 250px 30px 400px 250px 250px;
 }
 
 .navbar {
@@ -100,7 +101,19 @@ span {
     margin: 0 7px 0 7px;
     height: 250px;
 }
-
+.banner img{
+    max-width: 100%;
+}
+.bar{
+    grid-area: bar;
+    background-color: rgb(237, 29, 29);
+    height:30px;
+    width:97%;
+    margin-left:20px;
+    display: flex;
+    /* gap: 30px; */
+   
+}
 .cards {
     grid-area: cards;
     display: grid;
