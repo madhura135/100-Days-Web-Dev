@@ -1,10 +1,16 @@
-const buttons = document.querySelectorAll("button"); // querySelectorAll → “Give me all matching elements”
+//What input do I have?
+// buttons
+// //try to select all buttons using loop bcz we want diff sound for diff button
+// What output do I want?-->style and audio
+// What steps connect input to output?
 
-function check() {
-  alert("I got clicked!!");
-}
+let buttons = document.getElementsByClassName("drum"); //line selecting each button as a array element
+let buttonCount = buttons.length;
 for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", check);
+  buttons[i].addEventListener("click",function()){
+    event.target.style.color = "white";
+
+  }
+  
+ 
 }
-// 🧠 Think like this:
-// querySelector → “Give me the first matching element”

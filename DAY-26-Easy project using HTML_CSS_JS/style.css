@@ -1,0 +1,35 @@
+body{
+    background-color: whitesmoke;
+     text-align: center;
+
+}
+
+h1{
+    color: black;
+}
+
+.color{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+
+}
+.color p{
+    font-size: x-large;
+    font-weight: 400;
+}
+.color button{
+    color: black;
+    background-color: rgb(201, 165, 233);
+    height:40px;
+    width:100px;
+    border-radius: 20px;
+    border-style: none;
+    font-size: medium;
+    font-weight: 300;
+}
+.color button:hover{
+    background-color: rgb(197, 145, 243);;
+}
