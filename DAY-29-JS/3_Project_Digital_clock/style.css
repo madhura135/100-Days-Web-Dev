@@ -13,25 +13,31 @@ h1{
     text-align: center;
     background-color: rgb(180, 216, 237);
     width:30rem;
-    height:15rem;
+    height:10rem;
     margin:auto;
     border-radius: 35px;
     margin-bottom: 50px;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size:110px;
+    padding:10px 20px 0 20px;
+    color: rgb(96, 96, 245);  
 }
 button{
+    color: rgb(74, 74, 242);
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: rgb(180, 216, 237);
-    width:5rem;
+    width:9rem;
     height:2rem;
     margin:auto;
     border-radius: 15px;
     padding-top:5px;
     border-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    font-size:large;
+    font-weight: bold;
 }
 button:hover{
     background-color: rgb(143, 204, 240);
