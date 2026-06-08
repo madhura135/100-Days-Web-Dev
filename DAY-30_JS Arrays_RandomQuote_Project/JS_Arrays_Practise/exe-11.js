@@ -5,3 +5,5 @@ console.log(array.reverse());
 /*array from method */
 let name = "MAdhura";
 console.log(Array.from(name));
+
+/* */
