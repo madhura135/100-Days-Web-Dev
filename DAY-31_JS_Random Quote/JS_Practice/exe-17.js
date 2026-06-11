@@ -9,7 +9,7 @@ let fruits = ["Mango", "Banana", "Apple", "Chikoo"];
 //4. to print new array
 let newArray = [];
 for (let i = 0; i < fruits.length; i++) {
-  // 3 3<4=t 2 2<4=t
+  //0 0<4
   newArray.unshift(fruits[i]);
-  console.log(`New reverse array ${newArray}`);
 }
+console.log(`New reverse array ${newArray}`);
