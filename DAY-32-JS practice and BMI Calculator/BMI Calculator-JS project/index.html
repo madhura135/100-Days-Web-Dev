@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>
+        BMI=Weight(kg)​/(Height(m))<sup>2</sup>
+    </h2>
+    <!-- Inputs Needed
+Metric
+Weight (kg)
+Height (cm)
+Imperial
+Weight (lb)
+Height (ft)
+Height (in) -->
+
+    <form>
+        <h5>Choose weight and height unit</h5>
+        <div class="kgcm">
+            <label>Weight (kg) Height (cm)</label><input type="radio" id="radioKgCm" >
+        </div>
+        <div class="lbsft">   <label>Weight (lbs) Height (ft)</label><input type="radio" id="radioLbsFt">
+        </div>
+     
+        <label>Enter your Weight</label>
+        <input type="number" placeholder="Weight in kg" id="weight">
+        <label>Enter your Height</label>
+        <input type="number" placeholder="Height in cm" id="height">
+
+        <button>Calculate BMI</button>
+
+        <input type="text" placeholder=" Your-BMI" id="ans">
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
