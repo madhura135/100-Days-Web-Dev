@@ -1,0 +1,38 @@
+<!-- Create a glowing bulb effect using classList.toggle() method in JavaScript. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing bulb Effect</title>
+    <style>
+   .bulb {
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.glow {
+    background-color: yellow;
+    box-shadow: 0 0 40px yellow;
+}
+    </style>
+</head>
+<body>
+
+    <div class="bulb-container bulb">
+        Bulb
+    </div>
+   
+<script>
+    // Toggles the "dark-mode" class every time a button is clicked
+const bulb = document.querySelector(".bulb");
+
+setInterval(() => {
+    bulb.classList.toggle("glow");
+}, 1000);
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- 4.Write a JavaScript program to keep fetching contents of a website (every 5 seconds). -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching website in every few seconds</title>
+ </head>
+ <body>
+
+    <a href="https://www.google.com">Google</a>
+
+
+    
+    
+    <script>
+      setInterval(() => {
+    fetch("https://www.google.com")
+        .then(response => response.text())
+        .then(data => {
+            console.log(data);
+        });
+}, 5000);
+
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display random joke on page</title>
+    <style>
+        #joke{
+
+            width:500px;
+            height:400px;
+            background-color: beige;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 300;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="joke"></div>
+    <script>
+      const jokes = [
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "There are 10 types of people in the world: Those who understand binary, and those who don’t.",
+  "How many programmers does it take to change a light bulb? None. That’s a hardware problem.",
+  "Why did the developer go broke? Because he cleared his cache.",
+  "What do you call a computer that sings well? A Dell.",
+  "Why do Java developers wear glasses? Because they can’t C#.",
+  "How does a computer get drunk? By taking screenshots.",
+  "I told my computer I needed a break... And now it won’t stop sending me cookies.",
+  "Why don’t computer scientists like nature? Too many trees, branches, and bugs!",
+  "What’s a programmer’s favorite hangout spot? The breakpoint.",
+  "An SQL query walks into a bar, walks up to two tables, and asks... 'Can I join you?'",
+  "Why did the computer keep sneezing? Because it had a virus!",
+  "Why did the computer show up late to work? It had a hard drive.",
+  "How did the programmer die in the shower? He read the shampoo bottle instructions: Lather, Rinse, Repeat.",
+  "Why are we all so bad at estimating time? There are 2 hard things in computer science: cache invalidation, naming things, and off-by-one errors.",
+  "What is the object-oriented way to become wealthy? Inheritance.",
+  "Why do programmers confuse Halloween and Christmas? Because Oct 31 == Dec 25.",
+  "Why did the function stop calling the other function? Because they had constant arguments.",
+  "How many software engineers does it take to change a lightbulb? None. They just document it as a feature.",
+  "Why did the router marry the fiber optic cable? Because they had such a great connection!"
+];
+
+let index=Math.floor(Math.random()*jokes.length);
+
+let displayDiv=document.body.querySelector("#joke");
+displayDiv.innerText = jokes[index];
+
+    </script>
+</body>
+</html>
