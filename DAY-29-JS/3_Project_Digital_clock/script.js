@@ -1,28 +1,22 @@
-// Select the container div using class name
-// querySelector returns the FIRST matching element
-let displayTimeBox = document.querySelector(".container");
+const displayTimeBox = document.querySelector(".container");
 
-// Select button element
-let button = document.querySelector("button");
+window.onload = () => {
+  setInterval(() => {
+    const now = new Date();
 
-// Function that will run when button is clicked
-function onClickDisplay() {
-  // Create new Date object
-  // It takes current system time at that moment
-  const now = new Date();
+    let h = now.getHours();
+    const m = now.getMinutes();
+    const s = now.getSeconds();
 
-  // Create time string using template literals
-  // getHours() -> current hour
-  // getMinutes() -> current minute
-  // getSeconds() -> current second
-  const timeString = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+    const amPm = h >= 12 ? "PM" : "AM";
 
-  // Put time inside container div
-  // textContent changes the text of element
-  displayTimeBox.textContent = timeString;
-}
+    h = h % 12;
+    h = h === 0 ? 12 : h;
 
-// Add click event on button
-// When button is clicked,
-// onClickDisplay function will run
-button.addEventListener("click", onClickDisplay);
+    const timeString = `${h}:${m}:${s} ${amPm}`;
+
+    console.log(timeString);
+
+    displayTimeBox.textContent = timeString;
+  }, 1000);
+};
