@@ -25,3 +25,14 @@ takeOptionSelected.forEach((value) => {
   });
 });
 //function inside that for calculation KgCm BMI and LbsFt BMI
+
+const radioOptions = document.querySelectorAll('[name="option"]');
+
+const weightInput = document.getElementById("weight");
+const heightInput = document.getElementById("height");
+
+radioOptions.forEach((radio) => {
+  radio.addEventListener("change", () => {
+    console.log(radio.value);
+  });
+});

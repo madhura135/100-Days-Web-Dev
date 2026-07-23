@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+   <div class="converter">
+    <div>
+        <input type="radio" id="CToF" name="temp" value="celsius">
+        <label for="CToF">Celsius To Fahrenheit</label>
+    </div>
+
+    <div>
+        <input type="radio" id="FToC" name="temp" value="fahrenheit">
+        <label for="FToC">Fahrenheit To Celsius</label>
+    </div>
+
+    <label for="inputTemp">Enter temperature to convert</label>
+    <input type="text" id="inputTemp">
+
+    <button id="convert">Convert</button>
+
+    <label for="outputTemp">Check Output</label>
+    <input type="text" id="outputTemp">
+</div>
+
+</body>
+</html>
+
+<!-- Celsius → Fahrenheit
+F = (C × 9/5) + 32
+
+Fahrenheit → Celsius
+C = (F - 32) × 5/9 -->
