@@ -24,59 +24,34 @@ const convertBtn = document.getElementById("convert");
 // ======================================================
 // 3. LISTEN FOR USER CLICK
 // ======================================================
-
 convertBtn.addEventListener("click", function showOutput() {
-  // --------------------------------------------------
-  // STEP 1: Read the temperature entered by the user
-  // --------------------------------------------------
-
+  // Get temperature input
   const grabInputField = document.getElementById("inputTemp");
-
-  // .value returns a STRING.
-  // Number() converts it into a number for calculation.
   const temperatureValueInput = Number(grabInputField.value);
 
-  // --------------------------------------------------
-  // STEP 2: Find which radio button user selected
-  // --------------------------------------------------
-
+  // Find selected radio button
   const selectedOption = document.querySelector('input[name="temp"]:checked');
 
-  // --------------------------------------------------
-  // STEP 3: Make sure user selected an option
-  // --------------------------------------------------
-
+  // Check whether a radio button is selected
   if (selectedOption) {
-    // selectedOption is the radio HTML element.
-    // selectedOption.value gives us "celsius" or "fahrenheit".
-
-    console.log(selectedOption.value);
-
-    // ------------------------------------------------
-    // STEP 4: Decide which conversion function to call
-    // ------------------------------------------------
-
     let result;
 
+    // Celsius → Fahrenheit
     if (selectedOption.value === "celsius") {
-      // Call Celsius → Fahrenheit function
       result = CToF(temperatureValueInput);
-    } else {
-      // Call Fahrenheit → Celsius function
+    }
+
+    // Fahrenheit → Celsius
+    else {
       result = FToC(temperatureValueInput);
     }
 
-    // ------------------------------------------------
-    // STEP 5: Display the returned result
-    // ------------------------------------------------
-
+    // Get output field
     const outputField = document.getElementById("outputTemp");
 
+    // Put result inside input field
     outputField.value = result;
-
-    outputField.innerHTML = result;
   } else {
-    // No radio button was selected
     console.log("Please select a conversion type");
   }
 });
