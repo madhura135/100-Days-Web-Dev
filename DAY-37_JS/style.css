@@ -16,3 +16,6 @@ button{
     color: white;
 
 }
+button:hover{
+    background-color: blueviolet;
+}
