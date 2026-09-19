@@ -1,11 +1,11 @@
 body {
-    background-color: cornsilk;
+    background-color: #E8E8F0;
 }
 .cardLinks {
     border: 1px solid black;
     width: 450px;
     height: 350px;
-    background-color: rgb(250, 220, 149);
+    background-color: #F8F8F8;
     font-size: xx-large;
     font-weight: bold;
     display: flex;
@@ -18,6 +18,7 @@ body {
 #card1,
 #card2,
 #card3 {
+
     padding: 5px;
     border: 1px solid darksalmon;
     text-decoration: none;
@@ -26,6 +27,11 @@ body {
 img {
     width: 300px;
     border-radius: 15px;
+}
+.card-icon img{
+    height:1px;
+    width:1px;
+
 }
 #line1 {
     font-size: xx-large;
@@ -41,6 +47,7 @@ img {
     width:max-content;
 }
 .card2Div{
+    background-color: #F8F8F8;
        margin: 25px auto;
     padding:25px;
     text-align: center;
@@ -70,12 +77,12 @@ img {
       width:100%;
     height:30px;
     border-radius: 5px;
-    background-color: rgb(250, 148, 52);
-    color: black;
+    background-color: #6828F8;
+    color:white;
     font-weight: 600;
 }
 #button1:hover{
-    background-color: rgb(243, 179, 120);
+    background-color: #7038F8;
 }
 #work{
     width:100%;
@@ -88,6 +95,9 @@ img {
 .arrow{
     margin-left:180px
 }
+.arrow2{
+    margin-left:100px;
+}
 #personal{
      width:100%;
     height:30px;
@@ -98,4 +108,16 @@ img {
 }
 .buttons-card2 button{
     margin:10px;   
+}
+#Brand,#Port{
+      width:100%;
+    height:30px;
+    border-radius: 5px;
+    background-color: rgb(244, 237, 231);
+    color: black;
+    font-weight: 600;
+}
+#small{
+    font-size: small;
+    color: grey;
 }
