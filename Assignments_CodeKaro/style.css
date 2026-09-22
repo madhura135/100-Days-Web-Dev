@@ -1,0 +1,160 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.page {
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+h4 {
+    font-style: normal;
+    font-size: medium;
+    font-weight: 400;
+
+}
+
+#grey {
+    color: grey;
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+#here {
+    font-size: 14px;
+    margin: 0;
+}
+
+h2,
+h4,
+p {
+    margin: 0;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-side {
+    margin-top: 50px;
+}
+
+#logo {
+    width: 145px;
+    height: 145px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.follow {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.follow p {
+    margin: 0;
+}
+
+.g1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.g1 h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.g1 img {
+    width: 22px;
+    height: 22px;
+}
+
+.link-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.link-flex p {
+    margin: 0;
+}
+
+.fllowedBy {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fllowedBy-img {
+    display: flex;
+    align-items: center;
+}
+
+.fllowedBy img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.fllowedBy img:not(:first-child) {
+    margin-left: -10px;
+}
+
+#followers {
+    font-style: normal;
+    font-size: small;
+    font-weight: 400;
+
+}
+
+.bottom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+}
+
+#Btn-follow {
+    background-color: #4A5DF9;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+#Btn-msg {
+    background-color: #e8e9ec;
+    color: #000;
+    font-weight: 600;
+}
+
+#Btn-follow,
+#Btn-msg {
+    padding: 13px 20px;
+    width: 275px;
+    height: 44px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#add-button {
+    border-radius: 10px;
+    border-style: none;
+    width: 44px;
+    height: 44px;
+
+}
