@@ -1,16 +1,52 @@
-body{
-    margin:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
 }
-.hero{
-    height:100vh;
+
+.hero {
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
-  
 }
-#hero-img{
 
-width:100%;
-   transform: scale(0.7);
-
+#hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
+.tint{
+    background-color: black;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+.content{
+    top:0;
+    position: absolute;
+    color: white;
+    width:500px;
+   top:35%;
+   bottom:35%;
+   right:35%;
+   left:35%;
+transform: translate(-50,-50);}
+
+/* .title{
+        font-weight:bolder;
+        font-size:xx-large;
+} */
