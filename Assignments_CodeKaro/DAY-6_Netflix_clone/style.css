@@ -46,7 +46,44 @@ body {
    left:35%;
 transform: translate(-50,-50);}
 
-/* .title{
-        font-weight:bolder;
-        font-size:xx-large;
-} */
+nav{
+    position: absolute;
+   top:0;
+   display:flex;
+   justify-content: space-between;
+   width:1300px;
+   transform: translate(-50,-50);
+   top:5%;
+   left:10%;
+
+
+}
+.logo{
+     color:red;
+}
+.nav-flex{
+    display: flex;
+    gap:10px;
+}
+.Sign-btn{
+    height: 34px;
+    padding:3px 17px;
+    font-weight:bold;
+    border:none;
+    background-color: red;
+    color:white;
+    border-radius: 6px;
+    font-size:14px;
+}
+.En-btn{
+    height: 34px;
+    width:120px;
+    padding:3px 17px;
+    font-weight:bold;
+    border:1px solid grey;
+    background-color:black;
+    color:white;
+    border-radius: 6px;
+    font-size:14px;
+
+}
