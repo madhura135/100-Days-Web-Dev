@@ -78,6 +78,23 @@ body {
     color: grey;
     padding:20px;
 }
+.content-btn{
+           padding: 12px;
+        background-color:white;
+        color:black;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 190px;
+        justify-content: center;
+}
+.mt{
+    margin-top:6px;
+}
 
 nav {
     position: absolute;
@@ -130,4 +147,34 @@ nav {
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width:990px;
+    color: white;
+    margin:100px auto;
+    gap:80px;
+}
+.left{
+    color:white;
+    width:50%;
+}
+.right{
+    width:50%;
+}
+.real-tv {
+    display: block;
+    position: relative;
+}
+.real-tv video{
+    position: absolute;
+
+    right:150px;
+  
+    padding:2px 2px;
+}
+.tv{
+   
+    position: absolute;
 }
