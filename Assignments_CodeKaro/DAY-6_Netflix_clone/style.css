@@ -16,84 +16,92 @@ body {
 }
 
 #hero-img {
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 97%;
     object-fit: cover;
     display: block;
 }
-.tint{
+
+.tint {
     background-color: black;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.65) 50%,
-    rgba(0, 0, 0, 0.95) 100%
-);
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.65) 50%,
+            rgba(0, 0, 0, 0.95) 100%);
     position: absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
 }
-.content{
-    top:0;
+
+.content {
+    top: 0;
     position: absolute;
     color: white;
-    width:600px;
-   top:25%;
-   bottom:25%;
-   right:25%;
-   left:29%;
-   text-align: center;
-   /* letter-spacing: -2px; */
-/* transform: translate(-50%,-50%); */
+    width: 600px;
+    top: 25%;
+    bottom: 25%;
+    right: 25%;
+    left: 29%;
+    text-align: center;
+    /* letter-spacing: -2px; */
+    /* transform: translate(-50%,-50%); */
 }
-.content-flex{
+
+.content-flex {
     display: flex;
-    gap:10px;
+    gap: 10px;
     justify-content: center;
 }
-.title{
-    font-size:57px;
+
+.title {
+    font-size: 57px;
     text-align: center;
 
 }
-.sub-title{
+
+.sub-title {
     font-size: 19px;
     font-weight: 500;
-    margin:14px;
+    margin: 14px;
 }
-.desc{
+
+.desc {
     font-size: 16px;
-      margin-top:34px;
-      margin-bottom:20px;
+    margin-top: 34px;
+    margin-bottom: 20px;
 }
-.content-input{
+
+.content-input {
     background-color: transparent;
-    width:350px;
-    height:55px;
-    border-radius:10px;
+    width: 350px;
+    height: 55px;
+    border-radius: 10px;
     border: 0.5px solid grey;
-    font-size:medium;
+    font-size: medium;
     color: grey;
-    padding:20px;
+    padding: 20px;
 }
-.content-btn{
-           padding: 12px;
-        background-color:white;
-        color:black;
-        font-size: 20px;
-        font-weight: bold;
-        border: none;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        width: 190px;
-        justify-content: center;
+
+.content-btn {
+    padding: 12px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 190px;
+    justify-content: center;
 }
-.mt{
-    margin-top:6px;
+
+.mt {
+    margin-top: 6px;
 }
 
 nav {
@@ -111,6 +119,7 @@ nav {
 
     z-index: 10;
 }
+
 .logo {
     color: red;
     font-size: 52px;
@@ -148,33 +157,67 @@ nav {
     font-size: 16px;
     cursor: pointer;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: row;
-    width:990px;
+    justify-content: center;   /* centers the two blocks horizontally */
+    align-items: center;       /* centers them vertically against each other */
+    width: 990px;
+    margin: 20px auto;        /* centers the container on the page */
+    gap: 80px;
     color: white;
-    margin:100px auto;
-    gap:80px;
 }
-.left{
-    color:white;
-    width:50%;
-}
-.right{
-    width:50%;
-}
-.real-tv {
-    display: block;
-    position: relative;
-}
-.real-tv video{
-    position: absolute;
 
-    right:150px;
-  
-    padding:2px 2px;
+.left,
+.right {
+    flex: 1;                   /* equal widths, gap is accounted for automatically */
 }
-.tv{
-   
+
+.left {
+    margin: 0;                 /* remove the auto margin */
+}
+
+.real-tv {
+    position: relative;
+    width: 100%;
+}
+
+.tv {
+    position: relative;
+    /* in flow, defines the container size */
+    width: 100%;
+    display: block;
+    z-index: 2;
+    /* TV frame on top of the video */
+    /* pointer-events: none; */
+}
+
+#vdo {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 76%;
+    /* tweak to match your TV's screen area */
+    height: 59%;
+    /* tweak */
+    object-fit: cover;
+    z-index: 1;
+    /* video behind the TV frame */
+}
+.thick-line{
+    height:2px;
+    background-color:grey;
+    border:none;
+
+}
+#more-h1{
+    color:white;
+}
+.card-container{
+    color:white;
+    display:flex;
+    flex-direction: row;
+    gap:20px;
 }

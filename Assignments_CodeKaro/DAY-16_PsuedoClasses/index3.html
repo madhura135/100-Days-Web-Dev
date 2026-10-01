@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform all properties</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            margin:50px;
+
+        }
+        .scale,
+        .rotate,
+        .skew,
+        .translate {
+            width: 300px;
+            height: auto;
+            padding: 10px;
+        }
+        .scale {
+            background-color: aquamarine;
+            border: 1px solid black;
+            transform: scale(1.5);
+        }
+        .rotate {
+            border: 1px solid black;
+            background-color: brown;
+            transform: rotate(60deg);
+        }
+        .skew {
+            border: 1px solid black;
+            background-color: blueviolet;
+            transform: skew(20deg);
+        }
+        .translate {
+            border: 1px solid black;
+            background-color: yellow;
+            transform: translate(70px,60px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="scale">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem quam tempora quaerat eveniet
+                assumenda enim sequi tenetur velit libero laudantium porro deleniti, aliquam neque minima. Eius nesciunt
+                consequuntur reprehenderit.</p>
+        </div>
+        <div class="rotate">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem quam tempora quaerat eveniet
+                assumenda enim sequi tenetur velit libero laudantium porro deleniti, aliquam neque minima. Eius nesciunt
+                consequuntur reprehenderit.</p>
+        </div>
+        <div class="skew">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem quam tempora quaerat eveniet
+                assumenda enim sequi tenetur velit libero laudantium porro deleniti, aliquam neque minima. Eius nesciunt
+                consequuntur reprehenderit.</p>
+        </div>
+        <div class="translate">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem quam tempora quaerat eveniet
+                assumenda enim sequi tenetur velit libero laudantium porro deleniti, aliquam neque minima. Eius nesciunt
+                consequuntur reprehenderit.</p>
+        </div>
+    </div>
+</body>
+
+</html>
