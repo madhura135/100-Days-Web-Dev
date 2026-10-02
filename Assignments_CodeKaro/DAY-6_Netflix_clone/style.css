@@ -161,21 +161,26 @@ nav {
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;   /* centers the two blocks horizontally */
-    align-items: center;       /* centers them vertically against each other */
+    justify-content: center;
+    /* centers the two blocks horizontally */
+    align-items: center;
+    /* centers them vertically against each other */
     width: 990px;
-    margin: 20px auto;        /* centers the container on the page */
+    margin: 20px auto;
+    /* centers the container on the page */
     gap: 80px;
     color: white;
 }
 
 .left,
 .right {
-    flex: 1;                   /* equal widths, gap is accounted for automatically */
+    flex: 1;
+    /* equal widths, gap is accounted for automatically */
 }
 
 .left {
-    margin: 0;                 /* remove the auto margin */
+    margin: 0;
+    /* remove the auto margin */
 }
 
 .real-tv {
@@ -206,18 +211,122 @@ nav {
     z-index: 1;
     /* video behind the TV frame */
 }
-.thick-line{
-    height:2px;
-    background-color:grey;
-    border:none;
 
+.thick-line {
+    height: 2px;
+    background-color: grey;
+    border: none;
 }
-#more-h1{
-    color:white;
+
+.container2 {
+    margin: 20px 115px;
 }
-.card-container{
-    color:white;
-    display:flex;
+
+.card-container {
+    color: white;
+    display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
+}
+
+#more-h1 {
+    font-size: 28px;
+    margin: 25px auto;
+    color: white;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    padding: 20px;
+    background-color: blueviolet;
+    flex: 1;
+    border-radius: 16px;
+    background: linear-gradient(160deg, #192145 0%, #1d172d 50%, #210e17 100%);
+    position: relative;
+    min-height: 300px;
+}
+
+.svg-img svg {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+
+.sub-desc {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+.card-title {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px auto;
+}
+.faq-container {
+    max-width:1300px;
+    margin: 50px auto;      /* centers the whole section */
+    padding: 0 20px;
+}
+
+#faq-h3 {
+    font-size: 28px;
+    margin: 23px 0;
+    color: white;
+}
+
+.faq-Que {
+    display: flex;
+    justify-content: space-between;  /* text left, + right */
+    align-items: center;             /* vertically centers both */
+    background-color: rgb(75, 75, 75);
+    width: 100%;
+    margin: 0 0 8px 0;
+    padding: 24px 28px;
+    text-align: start;
+}
+
+.faq-Que h2 {
+    color: rgb(234, 231, 231);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.faq-Que svg {
+     flex-shrink: 0;         /*stops the + from getting squished */
+}
+.faq-Que:hover {
+    background-color: rgb(59, 59, 59);  
+}
+.last-input-container{
+    margin:60px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    justify-content: center;
+    align-items: center;
+}
+.read h4{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+.last-input {
+    background-color: transparent;
+    width: 650px;
+    height: 55px;
+    border-radius: 10px;
+    border: 0.5px solid grey;
+    font-size: medium;
+    color: grey;
+    padding: 20px;
+}
+.callOn{
+     color:rgb(197, 197, 197);
+}
+#call-num{
+    color:rgb(197, 197, 197);
+    font-size: 16px;
+    font-weight: 400;
 }
