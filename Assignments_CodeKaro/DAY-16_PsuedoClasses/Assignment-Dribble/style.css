@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    background-color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*------------------------------------------------------------------- Nav bar and nav elements------------------------------------------------ */
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 10px auto;
+    gap: 20px;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-img img {
+    width: 60px;
+    height: 55px;
+    margin: auto;
+}
+
+/*------------------------------------------------------------------ Search bar------------------------------------------------------------ */
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    width: 35vw;
+    height: 8vh;
+    background-color: #F3F3F4;
+    border-radius: 30px;
+    border: none;
+}
+
+#search-input {
+    background-color: #F3F3F4;
+    width: 80%;
+    border-radius: 30px;
+    border: none;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.search-bar>span {
+    color: black;
+    font-size: 16px;
+}
+
+.nav-elements a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    padding: 20px;
+}
+
+.find-container img {
+    width: 50px;
+    height: 45px;
+    margin: 5px auto;
+}
+
+.right-btn {
+    display: flex;
+    flex-direction: row;
+    margin: 13px auto;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+#R-btn-1 {
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#R-btn-2 {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------sub-nav-------------------------------------------------------------- */
+.sub-nav {
+    background-color: #FDF2F8;
+    color: rgb(74, 73, 73);
+    margin: 10px 15px;
+    border-radius: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#discount-tag {
+    width: 20px;
+    height: 20px;
+}
+
+#get-started-btn {
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* -----------------------------------------------------content-heading------------------------------------------------------------ */
+.content {
+
+    margin: 70px 305px;
+    width: 60vw;
+}
+
+.content-heading {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.profile-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* vertically centre dp, name and icons */
+    width: 100%;
+    margin: 30px 5px 10px 5px;
+    gap: 10px;
+}
+
+.dp-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#follow {
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+
+}
+
+#girl-dp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* crops instead of stretching */
+    flex-shrink: 0;
+    /* never let flexbox squash it */
+}
+
+.profile-l-s {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    /* replaces margin-left: 590px */
+}
+
+.heart-div,
+.save-div {
+    display: flex;
+    /* needed for centering */
+    align-items: center;
+    /* vertical centre */
+    justify-content: center;
+    /* horizontal centre */
+    width: 40px;
+    height: 40px;
+    background-color: #F3F3F4;
+    border-radius: 50%;
+    /* true circle */
+    border: 1px solid grey;
+    box-sizing: border-box;
+    /* border stays inside the 40px */
+    padding: 0;
+    /* padding just pushes things off-centre */
+}
+
+.heart-div img,
+.save-div img {
+    display: block;
+    width: 18px;
+    height: 15px;
+    /* no position:absolute */
+}
+
+#get-in-touch {
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+}
+
+.banner-card {
+    display: flex;
+    /* needed for centering */
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    background-color: #E3E9E1;
+    width: 100%;
+    padding: 60px 120px;
+    border-radius: 13px;
+    margin-top: 10px;
+}
+
+.banner-img {
+    display: block;
+    width: 90%;
+    height: auto;
+    /* keeps the aspect ratio */
+    object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* /-------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------For 768px to 1023px	@media (max-width: 1023px)  */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+@media (min-width: 481px)and(max-width: 767px) {
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 10px;
+        background-color: #FFFFFF;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /*-------------------------------------------------------- Nav bar and nav elements------------------------------------------------ */
+    nav {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        margin: 10px auto;
+        gap: 20px;
+        width: 100vw;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo-img img {
+        width: 40px;
+        height: 35px;
+        margin: auto;
+    }
+
+    /*------------------------------------------------------- Search bar------------------------------------------------------------ */
+    .search-bar {
+        display: flex;
+        flex-direction: row;
+        width: 35vw;
+        height: 8vh;
+        background-color: #F3F3F4;
+        border-radius: 30px;
+        border: none;
+    }
+
+    #search-input {
+        background-color: #F3F3F4;
+        width: 80%;
+        border-radius: 30px;
+        border: none;
+        padding: 25px;
+        font-size: 16px;
+    }
+
+    .search-bar>span {
+        color: black;
+        font-size: 16px;
+    }
+
+    .nav-elements a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: black;
+        padding: 20px;
+    }
+
+    .find-container img {
+        width: 50px;
+        height: 45px;
+        margin: 5px auto;
+    }
+
+    .right-btn {
+        display: flex;
+        flex-direction: row;
+        margin: 13px auto;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+
+    #R-btn-1 {
+        background-color: white;
+        color: black;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #R-btn-2 {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        width: 80px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* -------------------------------------------------------sub-nav-------------------------------------------------------------- */
+    .sub-nav {
+        background-color: #FDF2F8;
+        color: rgb(74, 73, 73);
+        margin: 10px 15px;
+        border-radius: 30px;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        padding: 13px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    #discount-tag {
+        width: 20px;
+        height: 20px;
+    }
+
+    #get-started-btn {
+        border-radius: 30px;
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        font-weight: 700;
+        border: 1px solid grey;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    /* -----------------------------------------------------content-heading------------------------------------------------------------ */
+    .content {
+
+        margin: 70px 305px;
+        width: 60vw;
+    }
+
+    .content-heading {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .profile-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* vertically centre dp, name and icons */
+        width: 100%;
+        margin: 30px 5px 10px 5px;
+        gap: 10px;
+    }
+
+    .dp-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #name {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #follow {
+        font-size: 12px;
+        font-weight: 400;
+        color: grey;
+
+    }
+
+    #girl-dp {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        /* crops instead of stretching */
+        flex-shrink: 0;
+        /* never let flexbox squash it */
+    }
+
+    .profile-l-s {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-left: auto;
+        /* replaces margin-left: 590px */
+    }
+
+    .heart-div,
+    .save-div {
+        display: flex;
+        /* needed for centering */
+        align-items: center;
+        /* vertical centre */
+        justify-content: center;
+        /* horizontal centre */
+        width: 40px;
+        height: 40px;
+        background-color: #F3F3F4;
+        border-radius: 50%;
+        /* true circle */
+        border: 1px solid grey;
+        box-sizing: border-box;
+        /* border stays inside the 40px */
+        padding: 0;
+        /* padding just pushes things off-centre */
+    }
+
+    .heart-div img,
+    .save-div img {
+        display: block;
+        width: 18px;
+        height: 15px;
+        /* no position:absolute */
+    }
+
+    #get-in-touch {
+        background-color: black;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 30px;
+        border: none;
+        padding: 5px 15px;
+        text-align: center;
+        width: 120px;
+        height: 40px;
+    }
+
+    .banner-card {
+        display: flex;
+        /* needed for centering */
+        justify-content: center;
+        /* horizontal */
+        align-items: center;
+        /* vertical */
+        background-color: #E3E9E1;
+        width: 100%;
+        padding: 60px 120px;
+        border-radius: 13px;
+        margin-top: 10px;
+    }
+
+    .banner-img {
+        display: block;
+        width: 90%;
+        height: auto;
+        /* keeps the aspect ratio */
+        object-fit: cover;
+    }
+}
