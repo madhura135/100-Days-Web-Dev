@@ -22,6 +22,17 @@ body {
     display: block;
 }
 
+.logo {
+    display: block;
+    line-height: 0;
+}
+
+.logo svg {
+    width: 160px;
+    height: auto;
+    display: block;
+}
+
 .tint {
     background-color: black;
     background: linear-gradient(to bottom,
@@ -59,7 +70,6 @@ body {
 .title {
     font-size: 57px;
     text-align: center;
-
 }
 
 .sub-title {
@@ -106,7 +116,7 @@ body {
 
 nav {
     position: absolute;
-    top: 30px;
+    top: 2px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -131,10 +141,12 @@ nav {
     display: flex;
     align-items: center;
     gap: 12px;
+
 }
 
 .Sign-btn {
-    height: 43px;
+    height: 40px;
+    width: 97px;
     padding: 0 20px;
     font-weight: bold;
     border: none;
@@ -146,16 +158,20 @@ nav {
 }
 
 .En-btn {
-    height: 43px;
-    width: 150px;
-    padding: 0 17px;
+    height: 40px;
+    width: 130px;
     font-weight: bold;
     border: 1px solid #777;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(46, 46, 46, 0.3);
     color: white;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2px;
 }
 
 .container {
@@ -259,14 +275,17 @@ nav {
     font-weight: 500;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .card-title {
     font-size: 25px;
     font-weight: 500;
     margin: 10px auto;
 }
+
 .faq-container {
-    max-width:1300px;
-    margin: 50px auto;      /* centers the whole section */
+    max-width: 1300px;
+    margin: 50px auto;
+    /* centers the whole section */
     padding: 0 20px;
 }
 
@@ -278,8 +297,10 @@ nav {
 
 .faq-Que {
     display: flex;
-    justify-content: space-between;  /* text left, + right */
-    align-items: center;             /* vertically centers both */
+    justify-content: space-between;
+    /* text left, + right */
+    align-items: center;
+    /* vertically centers both */
     background-color: rgb(75, 75, 75);
     width: 100%;
     margin: 0 0 8px 0;
@@ -294,24 +315,29 @@ nav {
 }
 
 .faq-Que svg {
-     flex-shrink: 0;         /*stops the + from getting squished */
+    flex-shrink: 0;
+    /*stops the + from getting squished */
 }
+
 .faq-Que:hover {
-    background-color: rgb(59, 59, 59);  
+    background-color: rgb(59, 59, 59);
 }
-.last-input-container{
-    margin:60px;
+
+.last-input-container {
+    margin: 60px;
     display: flex;
     flex-direction: column;
-    gap:25px;
+    gap: 25px;
     justify-content: center;
     align-items: center;
 }
-.read h4{
+
+.read h4 {
     color: white;
     font-size: 17px;
     font-weight: 500;
 }
+
 .last-input {
     background-color: transparent;
     width: 650px;
@@ -322,11 +348,62 @@ nav {
     color: grey;
     padding: 20px;
 }
-.callOn{
-     color:rgb(197, 197, 197);
+
+.callOn {
+    color: rgb(197, 197, 197);
 }
-#call-num{
-    color:rgb(197, 197, 197);
+
+#call-num {
+    color: rgb(197, 197, 197);
     font-size: 16px;
     font-weight: 400;
 }
+
+#number {
+    color: rgb(197, 197, 197);
+    text-decoration: underline;
+}
+
+.links-bottom-container {
+    max-width: 1300px;
+    margin: 35px auto;
+    display: flex;
+}
+
+.flex-1,
+.flex-2,
+.flex-3,
+.flex-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.flex-1 a,
+.flex-2 a,
+.flex-3 a,
+.flex-4 a {
+    color: rgb(197, 197, 197);
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Net-indi,
+.copyright {
+    margin-top: 40px;
+    color: rgb(197, 197, 197);
+}
+
+.copyright {
+    font-size: 13px;
+
+}
+
+
+
+
+
+
+

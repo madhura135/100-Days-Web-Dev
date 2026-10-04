@@ -1,0 +1,896 @@
+/*-----------------------------------------------------Media Queries---------------------------------------------------- */
+/* For mobile devices 320px to 480px */
+/* =========================================
+   MOBILE: 320px - 480px
+   ========================================= */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    /* =========================================
+       HERO
+       ========================================= */
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        min-height: 500px;
+        overflow: hidden;
+    }
+
+    #hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .tint {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* =========================================
+       NAVBAR
+       ========================================= */
+
+    nav {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: calc(100% - 30px);
+        max-width: none;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo svg {
+        width: 90px;
+        height: auto;
+    }
+
+    .nav-flex {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .En-btn {
+        width: 90px;
+        height: 32px;
+        padding: 0 5px;
+        font-size: 11px;
+        gap: 1px;
+    }
+
+    .En-btn svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    .Sign-btn {
+        width: 70px;
+        height: 32px;
+        padding: 0;
+        font-size: 12px;
+    }
+
+
+    /* =========================================
+       HERO CONTENT
+       ========================================= */
+
+    .content {
+        position: absolute;
+
+        width: calc(100% - 30px);
+
+        /* Remove desktop positioning */
+        top: 50%;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+
+        transform: translate(-50%, -50%);
+
+        color: white;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 1.15;
+        text-align: center;
+    }
+
+    .title p {
+        margin: 0;
+    }
+
+    .sub-title {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 14px 0;
+    }
+
+    .desc {
+        font-size: 13px;
+        line-height: 1.4;
+        margin: 20px 0;
+    }
+
+
+    /* =========================================
+       EMAIL + GET STARTED
+       ========================================= */
+
+    .content-flex {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .content-input {
+        width: 100%;
+        max-width: 350px;
+        height: 50px;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .content-btn {
+        width: 160px;
+        height: 48px;
+        padding: 10px;
+        font-size: 16px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* =========================================
+       HORIZONTAL LINE
+       ========================================= */
+
+    .thick-line {
+        width: 100%;
+        height: 2px;
+    }
+
+
+    /* =========================================
+       CREATE PROFILES SECTIONS
+       ========================================= */
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 40px 0;
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        flex: none;
+    }
+
+    .heading {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .sub-heading {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 12px;
+    }
+
+    .real-tv {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .tv {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #vdo {
+        width: 76%;
+        height: 59%;
+    }
+
+
+    /* =========================================
+       MORE REASONS
+       ========================================= */
+
+    .container2 {
+        width: 100%;
+        margin: 30px 0;
+        padding: 0 20px;
+    }
+
+    #more-h1 {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+
+    .card-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        width: 100%;
+        min-height: 220px;
+        padding: 20px;
+        flex: none;
+    }
+
+    .card-title {
+        font-size: 21px;
+    }
+
+    .sub-desc {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .svg-img svg {
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+    /* =========================================
+       FAQ
+       ========================================= */
+
+    .faq-container {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 40px 0;
+        padding: 0 15px;
+    }
+
+    #faq-h3 {
+        font-size: 23px;
+        margin: 20px 0;
+    }
+
+    .faq-Que {
+        width: 100%;
+
+        padding: 20px 15px;
+        margin-bottom: 7px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 10px;
+    }
+
+    .faq-Que h2 {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .faq-Que svg {
+        width: 22px;
+        height: 22px;
+        flex-shrink: 0;
+    }
+
+
+    /* =========================================
+       LAST EMAIL SECTION
+       ========================================= */
+
+    .last-input-container {
+        width: 100%;
+
+        margin: 40px 0;
+
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .read {
+        width: 100%;
+        text-align: center;
+    }
+
+    .read h4 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .last-input-container .content-flex {
+        width: 100%;
+    }
+
+    .last-input {
+        width: 100%;
+        max-width: 350px;
+        height: 50px;
+        padding: 15px;
+    }
+
+
+    /* =========================================
+       PHONE NUMBER
+       ========================================= */
+
+    .callOn {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #call-num {
+        font-size: 14px;
+    }
+
+
+    /* =========================================
+       FOOTER LINKS
+       ========================================= */
+
+    .links-bottom-container {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 35px 0;
+
+        padding: 0 10px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 25px 15px;
+    }
+
+    .flex-1,
+    .flex-2,
+    .flex-3,
+    .flex-4 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        width: 100%;
+    }
+
+    .flex-1 a,
+    .flex-2 a,
+    .flex-3 a,
+    .flex-4 a {
+        font-size: 13px;
+    }
+
+
+    /* =========================================
+       FOOTER LANGUAGE BUTTON
+       ========================================= */
+
+    .faq-container > .En-btn {
+        width: 100px;
+        height: 32px;
+        font-size: 11px;
+        margin-top: 20px;
+    }
+
+
+    /* =========================================
+       NETFLIX INDIA
+       ========================================= */
+
+    .Net-indi {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .copyright {
+        margin-top: 20px;
+        font-size: 11px;
+        line-height: 1.4;
+    }
+}
+
+
+/* --------------------------------------------------------------481px to 768px Tablets and Large Phones------------------------ */
+@media (min-width:481px)and (max-width: 768px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    /* =========================================
+       HERO
+       ========================================= */
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        min-height: 500px;
+        overflow: hidden;
+    }
+
+    #hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .tint {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* =========================================
+       NAVBAR
+       ========================================= */
+
+    nav {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: calc(100% - 30px);
+        max-width: none;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo svg {
+        width: 90px;
+        height: auto;
+    }
+
+    .nav-flex {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .En-btn {
+        width: 90px;
+        height: 32px;
+        padding: 0 5px;
+        font-size: 11px;
+        gap: 1px;
+    }
+
+    .En-btn svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    .Sign-btn {
+        width: 70px;
+        height: 32px;
+        padding: 0;
+        font-size: 12px;
+    }
+
+
+    /* =========================================
+       HERO CONTENT
+       ========================================= */
+
+    .content {
+        position: absolute;
+
+        width: calc(100% - 30px);
+
+        /* Remove desktop positioning */
+        top: 50%;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+
+        transform: translate(-50%, -50%);
+
+        color: white;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 1.15;
+        text-align: center;
+    }
+
+    .title p {
+        margin: 0;
+    }
+
+    .sub-title {
+        font-size: 30px;
+        font-weight: 500;
+        margin: 14px 0;
+    }
+
+    .desc {
+        font-size: 20px;
+        line-height: 1.4;
+        margin: 20px 0;
+    }
+
+
+    /* =========================================
+       EMAIL + GET STARTED
+       ========================================= */
+
+    .content-flex {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .content-input {
+        width: 100%;
+        max-width: 700px;
+        height: 50px;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .content-btn {
+        width: 190px;
+        height: 48px;
+        padding: 10px;
+        font-size: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* =========================================
+       HORIZONTAL LINE
+       ========================================= */
+
+    .thick-line {
+        width: 100%;
+        height: 2px;
+    }
+
+
+    /* =========================================
+       CREATE PROFILES SECTIONS
+       ========================================= */
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 40px 0;
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        flex: none;
+    }
+
+    .heading {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .sub-heading {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 12px;
+    }
+
+    .real-tv {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .tv {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #vdo {
+        width: 76%;
+        height: 59%;
+    }
+
+
+    /* =========================================
+       MORE REASONS
+       ========================================= */
+
+    .container2 {
+        width: 100%;
+        margin: 30px 0;
+        padding: 0 20px;
+    }
+
+    #more-h1 {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+
+    .card-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        width: 100%;
+        min-height: 220px;
+        padding: 20px;
+        flex: none;
+    }
+
+    .card-title {
+        font-size: 21px;
+    }
+
+    .sub-desc {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .svg-img svg {
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+    /* =========================================
+       FAQ
+       ========================================= */
+
+    .faq-container {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 40px 0;
+        padding: 0 15px;
+    }
+
+    #faq-h3 {
+        font-size: 23px;
+        margin: 20px 0;
+    }
+
+    .faq-Que {
+        width: 100%;
+
+        padding: 20px 15px;
+        margin-bottom: 7px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 10px;
+    }
+
+    .faq-Que h2 {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .faq-Que svg {
+        width: 22px;
+        height: 22px;
+        flex-shrink: 0;
+    }
+
+
+    /* =========================================
+       LAST EMAIL SECTION
+       ========================================= */
+
+    .last-input-container {
+        width: 100%;
+
+        margin: 40px 0;
+
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+
+        gap: 20px;
+    }
+
+    .read {
+        width: 100%;
+        text-align: center;
+    }
+
+    .read h4 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .last-input-container .content-flex {
+        width: 100%;
+    }
+
+    .last-input {
+        width: 100%;
+        max-width: 350px;
+        height: 50px;
+        padding: 15px;
+    }
+
+
+    /* =========================================
+       PHONE NUMBER
+       ========================================= */
+
+    .callOn {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #call-num {
+        font-size: 14px;
+    }
+
+
+    /* =========================================
+       FOOTER LINKS
+       ========================================= */
+
+    .links-bottom-container {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 35px 0;
+
+        padding: 0 10px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 25px 15px;
+    }
+
+    .flex-1,
+    .flex-2,
+    .flex-3,
+    .flex-4 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        width: 100%;
+    }
+
+    .flex-1 a,
+    .flex-2 a,
+    .flex-3 a,
+    .flex-4 a {
+        font-size: 13px;
+    }
+
+
+    /* =========================================
+       FOOTER LANGUAGE BUTTON
+       ========================================= */
+
+    .faq-container > .En-btn {
+        width: 100px;
+        height: 32px;
+        font-size: 11px;
+        margin-top: 20px;
+    }
+
+
+    /* =========================================
+       NETFLIX INDIA
+       ========================================= */
+
+    .Net-indi {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .copyright {
+        margin-top: 20px;
+        font-size: 11px;
+        line-height: 1.4;
+    }
+}
+
+
+
