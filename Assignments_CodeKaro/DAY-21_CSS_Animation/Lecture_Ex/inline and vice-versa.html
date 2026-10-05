@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block vice versa</title>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+            justify-content: center;
+        }
+
+        .div1 {
+            margin: 20px 30px;
+            background-color: antiquewhite;
+            padding: 10px;
+            text-align: center;
+            height: 50px;
+        }
+
+        .div2,
+        .div3,
+        .div4 {
+            margin: 20px 30px;
+            background-color: antiquewhite;
+            display: inline-block;
+            width: 200px;
+            /* This works! */
+            height: auto;
+            /* This works! */
+        }
+        .section1 span,
+        .section1 strong
+        .section1 a,
+        .section1 em,
+        .section1 img,
+        .section1 button{
+            display:block;
+            width:50px;
+            height:50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Quick Comparison between inline and block elements
+    </h1>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Block-Level Elements</th>
+            <th>Inline-Level Elements</th>
+        </tr>
+        <tr>
+            <td> <em>Line breaking</em></td>
+            <td>Block always starts on a new line and forces a line break after it.</td>
+            <td>Inline flows within the text and does not cause a line break.</td>
+        </tr>
+        <tr>
+            <td><em>Width</em></td>
+            <td>Block stretches automatically to fill the full width of its parent container</td>
+            <td>Inline takes up only as much width as its content requires.</td>
+        </tr>
+        <tr>
+            <td><em>CSS box model</em></td>
+            <td>Block respects width, height, and all margin / padding properties.</td>
+            <td>Inline ignores width and height; ignores top/bottom margins and padding layout flow.</td>
+        </tr>
+        <tr>
+            <td><em>Nesting Rules</em></td>
+            <td>Block can contain other block elements and inline elements.</td>
+            <td>Inline can only contain text or other inline elements (cannot contain block elements).</td>
+        </tr>
+        <tr>
+            <td><em>Common Examples</em></td>
+            <td>block : div,p,h1-h6, ul, li, section</td>
+            <td>Inline :span, a, strong, em, img, button</td>
+        </tr>
+    </table>
+    <section>
+        <div class="div1">
+
+            <p> This is the block div1, taking complete width, respects padding,margin and inline and block both can be
+                nested.</p>
+
+        </div>
+        <div class="div2">
+
+            <p> This is the block div, we will make it behave as inline element.</p>
+            <p>Added <strong>Inline-block</strong> and I can add width,height just same as block</p>
+
+        </div>
+        <div class="div3">
+
+            <p> This is the block div, we will make it behave as inline element.</p>
+            <p>Added <strong>Inline-block</strong> and I can add width,height just same as block</p>
+
+        </div>
+        <div class="div4">
+
+            <p> This is the block div, we will make it behave as inline element.</p>
+            <p>Added <strong>Inline-block</strong> and I can add width,height just same as block</p>
+        </div>
+    </section>
+    <section>
+        <h2>
+            Below are inline elements
+        </h2>
+        <span>This is span</span>
+        <a href="#">This is anchor tag</a>
+        <strong>This is strong tag</strong>
+        <em>This is emphasis tag</em>
+        <img src="./walking-on-the-danxia-landform-royalty-free-image-1623252956.avif" alt="mountain">
+        <button>This is the button and inline element</button>
+       
+        
+
+    </section>
+    <section class="section1">
+        <h2>These are same inline element we will make it behave as block</h2>
+        <br>
+        <br>
+        <span>This is span</span>
+        <a href="#">This is anchor tag</a>
+        <strong>This is strong tag</strong>
+        <em>This is emphasis tag</em>
+        <img src="./walking-on-the-danxia-landform-royalty-free-image-1623252956.avif" alt="mountain">
+        <button>This is the button and inline element</button>
+    </section>
+</body>
+
+</html>
