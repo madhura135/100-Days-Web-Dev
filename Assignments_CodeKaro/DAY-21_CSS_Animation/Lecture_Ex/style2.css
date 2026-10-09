@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 110px;
+}
+
+/* visible window of each film roll */
+.container-left-cards,
+.container2-left-cards {
+    width: 15vw;
+    height: 100vh;          /* fixed height + overflow hidden = only part of the strip is visible */
+    overflow: hidden;
+    transform: skew(5deg);
+}
+
+.container2-left-cards {
+    margin: 0 20px;
+}
+
+.container-left-cards {
+    margin: 0 20px;
+}
+
+/* the moving strip that holds all the cards */
+.border-card {
+    border: 0 dashed grey;
+    border-left-width: 9px;     /* only left/right edges, so -50% lines up exactly */
+    border-right-width: 9px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;              /* flex stops margins from collapsing, keeps the loop exact */
+    flex-direction: column;
+    animation-duration: 30s;    /* about 3s per image x 10 images */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* roll 1 moves UP */
+.container-left-cards .border-card {
+    animation-name: move1;
+}
+@keyframes move1 {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-50%); }
+}
+
+/* roll 2 moves DOWN */
+.container2-left-cards .border-card {
+    animation-name: move2;
+}
+@keyframes move2 {
+    from { transform: translateY(-50%); }
+    to   { transform: translateY(0); }
+}
+
+.card,
+.card2 {
+    margin: 10px auto;
+    padding: 6px;               /* was 10px, makes the card shorter */
+    border-radius: 20px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: rgba(70, 5, 5, 0.879);
+}
+
+.card2 {
+    background-color: rgba(117, 38, 9, 0.879);
+}
+
+img {
+    display: block;
+    width: 80%;
+    height: 160px;              /* was 300px, this is the main height reduction */
+    object-fit: contain;
+    object-position: center;
+    margin: 10px auto;          /* was 15px */
+}
