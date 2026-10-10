@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and combinators</title>
+    <style>
+        :root{
+
+            --bg-color:rgb(212, 209, 209);
+            --second-bg: rgb(240, 233, 233);
+            --rounded:20px;
+        }
+        .container{
+            margin:0 auto;
+            background-color: var(--bg-color);
+            border-radius: var(--rounded);
+            width:400px;
+            height:500px;
+            padding:40px 20px;
+            justify-content: center;
+        }
+        .card{
+            margin:20px;
+            background-color: var(--second-bg);
+            border-radius: var(--rounded);
+            width:80%;
+            height:80%;
+            padding:10px;
+        }
+        #c-img{
+            margin: 5px 10px;
+            padding:5px;
+             width:90%;
+            height:90%;
+            border-radius: var(--rounded);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img id="c-img" src="https://picsum.photos/200" alt="image">
+        </div>
+    </div>
+</body>
+</html>
