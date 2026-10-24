@@ -8,13 +8,13 @@
 let score = scoreber(prompt("Enter the score of the student: "));
 if (score>=90) {
   console.log("Grade is A");
-} else if (score > 80 && score <= 89) {
+} else if (score >= 80 && score <= 89) {
   console.log("Grade is B");
 } 
-else if (score > 70 && score <= 79) {
+else if (score >= 70 && score <80) {
   console.log("Grade is C");
 }
-else if (score > 60 && score <= 69) {
+else if (score >= 60 && score <70) {
   console.log("Grade is D");
 }
 else{
