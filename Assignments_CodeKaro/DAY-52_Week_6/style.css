@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:95vh;
+    width:95vw;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 5% 25%;
+    background-color: beige;
+    height:150px;
+    width:400px;
+    border-radius: 13px;
+}
+#content>p{
+    margin-top:20px;
+    font-size: large;
+    font-weight: 600;
+}
+#btn{
+margin-left: 25%;
+width:160px;
+   height:40px;
+   background-color: black;
+   color: white;
+   font-size: small;
+   font-weight: bold;
+   border:none;
+   border-radius: 12px;
+}
+#content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 5% 25%;
+    background-color: beige;
+    height:300px;
+    width:400px;
+    border-radius: 13px;
+}
+#content2>p{
+    margin-top:20px;
+    font-size: large;
+    font-weight: 600;
+}
+#btn2{
+margin-left: 25%;
+width:160px;
+   height:40px;
+   background-color: black;
+   color: white;
+   font-size: small;
+   font-weight: bold;
+   border:none;
+   border-radius: 12px;
+}
+#btn2:hover{
+    cursor: pointer;
+}
+.dice{
+    padding:5px;
+    text-align: center;
+    font-size:xx-large;
+    margin:10% 35%;
+    width:70px;
+    height:70px;
+    background-color:rgb(244, 82, 82);
+   
+}
+
+.spin{
+     animation-name: spin;
+    animation-duration: 2s;
+    
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
