@@ -1,9 +1,9 @@
+const background = document.body;
 
-const background=document.body;
+const colorSet = ["red", "blue", "pink", "grey", "yellow"];
+const changebtn = document.getElementById("btn1");
 
-let colorSet=["red","blue","pink","grey","yellow"];
-let randomColor=Math.floor(Math.random()*colorSet.length);
- 
-changeColor=()=>{
-       background.style.backgroundColor = colorSet[randomColor];
- }
+changebtn.addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * colorSet.length);
+    background.style.backgroundColor = colorSet[randomIndex];
+});
