@@ -72,13 +72,13 @@ width:160px;
 }
 
 .spin{
-     animation-name: spin;
+    animation-name: spin;
     animation-duration: 2s;
-    
 }
 @keyframes spin {
     to{
         transform: rotate(360deg);
+        
     }
     
 }

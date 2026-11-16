@@ -17,5 +17,5 @@ roll = () => {
   dice.classList.add('spin'); //classlist help to add/remove the class
   setTimeout(function () {
     dice.classList.remove('spin');
-  }, 2000);
+  },2000);
 };
