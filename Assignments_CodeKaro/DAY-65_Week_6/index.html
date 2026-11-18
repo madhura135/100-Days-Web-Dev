@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. Do not let add duplicate email , we need to make a function who checkes duplicate email in array
+    2.when duplicate is found we want the pop-up on screen not alert , pop-up should be in red color
+    3.Same pop-up will appear when user added successfully
+    4.To add delete button whwich will delete data from the array and will give yellow color pop-up  -->
+
+    <div class="container">
+        <div id="left">
+            <h1>Welcome to Javascript course</h1>
+            <div id="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quo provident itaque nesciunt id cupiditate velit eos incidunt,
+                ipsa fugiat molestiae harum quia nulla reiciendis enim suscipit
+                commodi vitae ut esse dolorum a nostrum maxime distinctio. Quia, commodi? Esse!
+            </div>
+            <div id="data-container">
+                <input type="text" id="name" placeholder="Name" required autofocus>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="telnumber" placeholder="Contact number" required>
+            </div>
+            <button id="l-btn" onclick="AddUser()">Enroll to course</button>
+        </div>
+        <div id="right">
+            <!-- <div class="users-container">
+                <p id="name">User</p>
+                <p id="email">User@gmail.com</p>
+                <p id="telNum">896543289</p>
+            </div> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
