@@ -54,7 +54,7 @@ body{
     display: flex;
     flex-direction: row;
      height:40px;
-     width:80%;
+     width:40%;
      padding:6px 4px;
      margin:10px;
     background-color: cadetblue;
@@ -82,4 +82,31 @@ input:focus{
     height:80px;
     width:80px;
     background-color: orangered;
+}
+
+.pop-up-container{
+    margin:15px;   
+}
+.success, .danger {
+    display: flex;
+    align-items: center;      /* Centers text vertically */
+    justify-content: center;  /* Centers text horizontally */
+    box-sizing: border-box;   /* Prevents padding from breaking the 45px height */
+    
+    height: 45px;
+    padding: 0 16px;          /* Left/right padding only */
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.success {
+    background-color: lightgreen;
+    border: 1px solid green;
+    font-size: smaller;
+}
+
+.danger {
+    background-color: lightsalmon;
+    border: 1px solid darkred;
+    font-size: medium;
 }

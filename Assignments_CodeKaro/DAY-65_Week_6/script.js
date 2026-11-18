@@ -1,5 +1,38 @@
 let userArr = [];
 
+const checkDuplicateUSer = (userArr, newUser) => {
+  let isDuplicate = false;
+
+  for (let i = 0; i < userArr.length; i++) {
+    if (
+      userArr[i].email === newUser.email ||
+      userArr[i].telnumber === newUser.telnumber
+    ) {
+      isDuplicate = true;
+      break;
+    }
+  }
+
+  let div = document.createElement("div");
+  let popUpContainer = document.querySelector(".pop-up-container");
+  popUpContainer.appendChild(div);
+
+  setTimeout(() => {
+    div.remove();
+  }, 1000);
+
+  if (isDuplicate) {
+    console.log("Same email or number exist with other account");
+    div.textContent = "Same email or number exists";
+    div.classList.add("danger");
+    return true;
+  } else {
+    div.textContent = "User added successfully !!";
+    div.classList.add("success");
+    return false;
+  }
+};
+
 const AddUser = () => {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
@@ -11,17 +44,15 @@ const AddUser = () => {
     telnumber: telnumber,
   };
 
-    checkDuplicateUSer();
-  userArr.push(user);
+  if (checkDuplicateUSer(userArr, user)) {
+    return;
+  }
+
+  userArr[userArr.length] = user;
 
   // Trigger the display 1 second AFTER the user is added
   setTimeout(() => {
     showData(user);
-
-    // Show the alert 1.5 seconds after the user appears on screen
-    setTimeout(() => {
-      alert("User added successfully !!");
-    }, 1500);
   }, 1000);
 };
 
@@ -43,11 +74,3 @@ function showData(user) {
   div.append(child1, child2, child3);
   right.appendChild(div);
 }
-
- checkDuplicateUSer=(user.email.value)=>{
-    if( userArr.includes.user.email.value){
-        console.log("Same email exist with other account")
-    }
-   
-
- };
